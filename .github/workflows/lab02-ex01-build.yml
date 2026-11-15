@@ -5,8 +5,16 @@ on:
       - 'lab02-ex01/**'
       - '.github/workflows/lab02-ex01-build.yml'
 jobs:
-   first-job:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Diga oi
-         run: echo "Hello World!"
+   build-node:
+       runs-on: ubuntu-latest
+       container: node:18
+       defaults:
+         run:
+           working-directory: lab02-ex01
+       steps:
+           - run: node --version
+           - run: npm --version
+           - uses: actions/checkout@v3
+           - run: npm install
+           - run: npm install --save moment
+           - run: node app.js
