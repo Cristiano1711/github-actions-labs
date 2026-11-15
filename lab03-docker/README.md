@@ -1,2 +1,2 @@
 # webacademy
-Imagem publicada em: https://hub.docker.com/r/cristiano1711/webacademy-lab03
+Imagem publicada no Docker Hub: https://hub.docker.com/r/cristiano1711/webacademy-lab03
