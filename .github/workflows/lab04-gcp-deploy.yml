@@ -41,4 +41,4 @@ jobs:
           context: ./lab04
           push: true
           file: ./lab04/Dockerfile
-          tags: moisesgc/webacademy:latest
+          tags: cristiano1711/webacademy-lab04:latest
