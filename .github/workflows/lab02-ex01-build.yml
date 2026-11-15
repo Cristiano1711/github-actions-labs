@@ -1,0 +1,12 @@
+name: Lab02 Ex01 - Simple Local
+on:
+  push:
+    paths:
+      - 'lab02-ex01/**'
+      - '.github/workflows/lab02-ex01-build.yml'
+jobs:
+   first-job:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Diga oi
+         run: echo "Hello World!"
